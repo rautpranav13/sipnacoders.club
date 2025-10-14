@@ -1,23 +1,30 @@
-import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
-import { logout } from '../lib/appwrite';
+import React from "react";
+import PillNav from "../blocks/Components/PillNav/PillNav.jsx";
+import logo from "../assets/react.svg"; // <-- make sure to place your logo here
 
-export default function Navbar() {
-  const { user } = useAuth();
+export default function Navbar({ active }) {
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Events", href: "/events" },
+    { label: "Dashboard", href: "/dashboard" },
+    { label: "Contact", href: "/contact" }
+  ];
 
   return (
-    <nav className="bg-gray-800 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="font-bold text-xl">Sipna Coders Club</Link>
-      <div className="space-x-4">
-        {user ? (
-          <>
-            <Link to="/dashboard" className="hover:text-gray-300">Dashboard</Link>
-            <button onClick={logout} className="bg-red-500 px-3 py-1 rounded hover:bg-red-600">Logout</button>
-          </>
-        ) : (
-          <Link to="/login" className="bg-blue-500 px-3 py-1 rounded hover:bg-blue-600">Login</Link>
-        )}
-      </div>
-    </nav>
+    <div className="w-full fixed top-0 left-0 z-50 bg-background/80 backdrop-blur-md shadow-md">
+      <PillNav
+        logo={logo}
+        logoAlt="Sipna Coders Club Logo"
+        items={navItems}
+        activeHref={active || "/"}
+        className="px-6 py-2"
+        ease="power2.easeOut"
+        baseColor="#fff"           // Dark background for the nav bar
+        pillColor="#000"           // Highlight pill color
+        hoveredPillTextColor="#000"
+        pillTextColor="#ffffff"
+      />
+    </div>
   );
 }

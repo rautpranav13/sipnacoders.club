@@ -12,8 +12,10 @@ module.exports = {
         secondary: '#9333EA',
         background: '#0D0D12', // dark background
         surface: '#1A1A24', // card surface
+        background: '#0a0a0a',
       },
     },
   },
   plugins: [],
+  
 }
