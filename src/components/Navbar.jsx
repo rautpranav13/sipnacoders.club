@@ -20,10 +20,10 @@ export default function Navbar({ active }) {
         activeHref={active || "/"}
         className="px-6 py-2"
         ease="power2.easeOut"
-        baseColor="#fff"           // Dark background for the nav bar
-        pillColor="#000"           // Highlight pill color
-        hoveredPillTextColor="#000"
-        pillTextColor="#ffffff"
+        baseColor="#000"           // Dark background for the nav bar
+        pillColor="#fff"           // Highlight pill color
+        hoveredPillTextColor="#fff"
+        pillTextColor="#000"
       />
     </div>
   );

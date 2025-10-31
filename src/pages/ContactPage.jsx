@@ -1,0 +1,25 @@
+import React from "react";
+import Navbar from "../components/Navbar.jsx";
+import GlitchText from "../blocks/TextAnimations/GlitchText/GlitchText.jsx";
+
+export default function ContactPage() {
+ 
+
+  return (
+    <div className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-background text-gray-100">
+{/* ------------------ Navbar ------------------ */}
+     <Navbar active="/" />
+
+      <GlitchText
+  speed={1}
+  enableShadows={true}
+  enableOnHover={true}
+  className='custom-class'
+>
+  Contact 
+</GlitchText>
+      
+    
+    </div>
+  );
+}
