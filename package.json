@@ -11,7 +11,11 @@
     "tailwind:init": "tailwindcss init -p"
   },
   "dependencies": {
-    "@lottiefiles/dotlottie-react": "^0.17.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@lottiefiles/dotlottie-react": "^0.17.6",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
     "appwrite": "^21.2.1",
     "dotenv": "^17.2.3",
     "embla-carousel-react": "^8.6.0",

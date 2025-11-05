@@ -62,7 +62,7 @@ export default function HomePage() {
 
         {/* Call to Action */}
         <a
-          href="/dashboard"
+          href="/login"
           className="mt-8 bg-primary hover:bg-secondary px-8 py-3 rounded-full text-white font-semibold transition-all"
         >
           Go to Dashboard →
