@@ -10,6 +10,7 @@ export default defineConfig({
       },
     }),
   ],
-  // ✅ Add this to let Vite handle .lottie files as static assets
-  assetsInclude: ['**/*.lottie'],
+
+  // ✅ Combine both patterns into one array
+  assetsInclude: ['**/*.lottie', '**/*.glb'],
 });

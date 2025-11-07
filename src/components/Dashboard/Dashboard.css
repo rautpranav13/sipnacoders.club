@@ -1,0 +1,31 @@
+@keyframes pulse-border {
+  0% { border-color: rgba(255,255,255,0.05); }
+  50% { border-color: rgba(255,255,255,0.15); }
+  100% { border-color: rgba(255,255,255,0.05); }
+}
+.card-animated-border {
+  animation: pulse-border 4s infinite ease-in-out;
+}
+
+.custom-divider {
+  /* This creates the 2px thick white line */
+  border-top: 1px solid #ffffff24; 
+  
+  /* Adds space above and below the line, adjust as needed */
+  margin: 10px 0; 
+  
+  /* Ensures the line does not have a height of its own */
+  height: 0; 
+}
+
+.title {
+  /* This hex code is a close match for the "Hover Me." text. */
+  color: #5c526d;
+  
+  /* A bold sans-serif font like Montserrat or a similar Google Font can be used */
+  font-family: 'Montserrat', sans-serif;
+  
+  /* Adjust font size and weight as needed */
+  font-size: 12rem;
+  font-weight: 700;
+}

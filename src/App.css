@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+@keyframes pulse-border {
+  0% { border-color: rgba(255,255,255,0.05); }
+  50% { border-color: rgba(255,255,255,0.15); }
+  100% { border-color: rgba(255,255,255,0.05); }
+}
+.card-animated-border {
+  animation: pulse-border 4s infinite ease-in-out;
+}

@@ -1,0 +1,14 @@
+.event-card {
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse-border {
+  0% { border-color: rgba(255,255,255,0.05); }
+  50% { border-color: rgba(255,255,255,0.15); }
+  100% { border-color: rgba(255,255,255,0.05); }
+}
+.card-animated-border {
+  animation: pulse-border 4s infinite ease-in-out;
+}

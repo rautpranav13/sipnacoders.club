@@ -6,6 +6,9 @@ import AboutPage from './pages/AboutPage';
 import EventsPage from './pages/EventsPage';
 import DashboardPage from './pages/DashboardPage';
 import ContactPage from './pages/ContactPage';
+import PastEvents from "./pages/PastEvents.jsx";
+import AttendedEvents from "./pages/AttendedEvents.jsx";
+import UpcomingEvents from './pages/UpcomingEvents.jsx';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/past-events" element={<PastEvents />} />
+          <Route path="/attended-events" element={<AttendedEvents />} />
+          <Route path="/upcoming-events" element={<UpcomingEvents />} />
         </Routes>
       </Router>
     </AuthProvider>

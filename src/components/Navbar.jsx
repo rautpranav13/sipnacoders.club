@@ -1,6 +1,6 @@
 import React from "react";
 import PillNav from "../blocks/Components/PillNav/PillNav.jsx";
-import logo from "../assets/react.svg"; // <-- make sure to place your logo here
+import logo from "../assets/CodersLogo.png"; // <-- make sure to place your logo here
 
 export default function Navbar({ active }) {
   const navItems = [

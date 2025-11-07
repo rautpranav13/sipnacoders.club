@@ -56,9 +56,9 @@
 .pill-logo {
   width: var(--nav-h);
   height: var(--nav-h);
-  border-radius: 50%;
+  border-radius: 500%;
   background: var(--base, #000);
-  padding: 8px;
+  padding: 0px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +93,7 @@
   justify-content: center;
   height: 100%;
   padding: 0 var(--pill-pad-x);
-  background: var(--pill-bg, #fff);
+  background: var(--pill-bg, #868686);
   color: var(--pill-text, var(--base, #000));
   text-decoration: none;
   border-radius: 9999px;
