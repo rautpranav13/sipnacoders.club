@@ -3,76 +3,52 @@ import SplashCursor from '../blocks/Animations/SplashCursor/SplashCursor.jsx';
 import LiquidEther from "../blocks/Backgrounds/LiquidEther/LiquidEther.jsx";
 import DecryptedText from "../blocks/TextAnimations/DecryptedText/DecryptedText.jsx";
 import Navbar from "../components/Navbar.jsx";
-
-
+import HomRobo from "../components/HomRobo.jsx";
+import LightRays from '../blocks/Backgrounds/LightRays/LightRays.jsx';
+import HomSec2Comp from "../components/HomSec2Comp.jsx";
+import HomSec3 from "../components/HomSec3.jsx";
+import ScrollVelocity from "../blocks/TextAnimations/ScrollVelocity/ScrollVelocity.jsx"
+import Footer from "../components/Footer.jsx";
 
 
 export default function HomePage() {
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-background text-gray-100">
+    
+    <div className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-background ">
       
       <Navbar active="/" />
-      
+
       <SplashCursor />
       
-      {/* ------------------ Liquid Ether Background ------------------ */}
-       <div className="absolute inset-0 z-0">
-        <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-          mouseForce={50}
-          cursorSize={100}
-          isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo={true}
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-        />
-      </div> 
 
+  {/* ---------- Section 1: Hero / Intro ---------- */}
+      <section className="w-full h-screen flex flex-col items-center justify-center text-center  py-20">
+      <HomRobo/> 
+      </section>
+     
+{/* ---------- Section 2 ---------- */}
+     <section className="w-full h-screen flex flex-col items-center justify-center text-center  py-0">
+        <HomSec2Comp/>
+     </section>
 
-
-      {/* ------------------ Foreground Content ------------------ */}
-      <div className="relative z-10 px-6 py-12 flex flex-col items-center">
-        {/* Animated Title */}
-        <div className="text-white text-5xl md:text-7xl font-extrabold tracking-wide mb-6">
-          <DecryptedText
-            text="Sipna Coders Club"
-            animateOn="hover"
-            revealDirection="start"
-            sequential={true}
-            speed={60}
-            characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*"
-            className="revealed"
-            parentClassName="all-letters"
-            encryptedClassName="encrypted"
-          />
+<div className=" w-full mx-auto  hidden sm:block lg:mt-0">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-xl  mb-4 leading-tight">
+            <ScrollVelocity
+              texts={['Coders Club', 'Scroll Down']} 
+              className="custom-scroll-text"
+            />
+          </h1>
         </div>
 
-        {/* Tagline */}
-        <p className="text-gray-300 mt-4 text-lg md:text-xl max-w-xl text-center">
-          Empowering future innovators through code, creativity, and collaboration.
-        </p>
+{/* ---------- Section 3:  ---------- */}
+      <section className="w-full  flex flex-col items-center justify-center text-center  py-0">
+        <HomSec3/>
+     </section>
 
-        {/* Call to Action */}
-        <a
-          href="/login"
-          className="mt-8 bg-primary hover:bg-secondary px-8 py-3 rounded-full text-white font-semibold transition-all"
-        >
-          Go to Dashboard →
-        </a>
-      </div>
-
-      {/* Footer */}
-      <div className="absolute bottom-4 text-gray-400 text-sm z-10">
-        © {new Date().getFullYear()} Sipna Coders Club
-      </div>
+        <section className="w-full  flex flex-col items-center justify-center text-center  py-0">
+        <Footer/>
+     </section>
+      
     </div>
   );
 }

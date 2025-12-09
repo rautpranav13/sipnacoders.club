@@ -1,7 +1,6 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
@@ -10,6 +9,11 @@ export default defineConfig({
       },
     }),
   ],
-  // ✅ Add this to let Vite handle .lottie files as static assets
+
+  server: {
+    host: true,
+  },
+
+  // ✅ Vite will now recognize .lottie files as assets
   assetsInclude: ['**/*.lottie'],
-});
+})

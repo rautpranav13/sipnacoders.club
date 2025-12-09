@@ -14,7 +14,7 @@ import ScrollStack, { ScrollStackItem } from '../blocks/Components/ScrollStack/S
 
 import ChromaGrid from "../blocks/Components/ChromaGrid/ChromaGrid.jsx";
 
-import avtr from "../assets/vrush.png";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -25,6 +25,8 @@ import Cube from "../components/Cube.jsx";
 import { Search, Lightbulb, Target, ArrowRight } from "lucide-react";
 import GlitchText from "../blocks/TextAnimations/GlitchText/GlitchText.jsx";
 import BlurText from "../blocks/TextAnimations/BlurText/BlurText.jsx";
+
+import avtr from "../assets/vrush.png";
 
 import box1 from "../assets/box 1.jpg";
 import box2 from "../assets/box 2.jpg";
@@ -287,6 +289,27 @@ export default function About() {
 
       {/*Section 2 Our Mission */}
       <section className="w-full min-h-screen flex flex-col justify-start items-center  text-white relative z-10">
+         <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+  <PixelBlast
+    variant="circle"
+    pixelSize={6}
+    color="#B19EEF"
+    patternScale={3}
+    patternDensity={1.2}
+    pixelSizeJitter={0.5}
+    enableRipples
+    rippleSpeed={0.4}
+    rippleThickness={0.12}
+    rippleIntensityScale={1.5}
+    liquid
+    liquidStrength={0.12}
+    liquidRadius={1.2}
+    liquidWobbleSpeed={5}
+    speed={0.6}
+    edgeFade={0.25}
+    transparent
+  />
+</div>
         <div className="relative flex flex-col items-center w-full">
           {/* Floating Title */}
           <ScrollFloat
@@ -304,7 +327,7 @@ export default function About() {
           <div className="w-full  md:min-h-screen flex flex-col md:flex-row justify-between items-start shadow-2xl overflow-visible mt-10">
 
             {/* 🔹 Left Sticky Carousel */}
-            <div className="md:w-1/2 w-full sticky top-0 h-screen mt-9">
+            <div className="md:w-1/2 w-full  sticky top-0 h-screen mt-9">
               <Swiper
                 modules={[Autoplay]}
                 spaceBetween={0}

@@ -10,9 +10,9 @@ module.exports = {
       colors: {
         primary: '#7C3AED', // violet accent
         secondary: '#9333EA',
-        background: '#0D0D12', // dark background
+        background: '#000000', // dark background
         surface: '#1A1A24', // card surface
-        background: '#0a0a0a',
+        background: '#000000',
       },
     },
   },
