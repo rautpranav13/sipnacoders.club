@@ -6,8 +6,10 @@ import TextType from "../blocks/TextAnimations/TextType/TextType.jsx";
 import CodeWelcome from "./CodeWelcome.jsx";
 import Arow from "./Arow.jsx";
 import ScrollVelocity from "../blocks/TextAnimations/ScrollVelocity/ScrollVelocity.jsx"
+import { useNavigate } from "react-router-dom";//login
 
 export default function Robo() {
+   const navigate = useNavigate(); //login
   return (
     <div className="min-h-screen w-full bg-black text-white ">
         <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
@@ -62,9 +64,35 @@ export default function Robo() {
                   <div className="absolute bottom-0 right-1/2 translate-x-1/2 w-[600px] h-[600px] 
                       bg-gradient-to-t from-purple-400/20 to-transparent 
                       rounded-full blur-3xl" />
+
+
+       <div className="mt-[27%] sm:mt-[0%] ml-[0%] sm:ml-[40%] absolute" >
+        <button
+        onClick={() => navigate("/login")}
+        className="
+          px-5 py-2.5 
+          bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-300
+          text-white font-semibold 
+          rounded-xl 
+          shadow-lg shadow-blue-600/40 
+          hover:shadow-blue-400/60 
+          hover:scale-110 
+          active:scale-95 
+          transition-all duration-300
+        "
+      >
+        Join Now
+      </button>
+
+
+      </div>
       <CodeWelcome/>
+  
+      
 
       <Arow/>
+      
+      
             
 
     {/* right — 3D Model */}

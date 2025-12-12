@@ -29,6 +29,7 @@ export default function HomePage() {
 {/* ---------- Section 2 ---------- */}
      <section className="w-full h-screen flex flex-col items-center justify-center text-center  py-0">
         <HomSec2Comp/>
+        
      </section>
 
 <div className=" w-full mx-auto  hidden sm:block lg:mt-0">

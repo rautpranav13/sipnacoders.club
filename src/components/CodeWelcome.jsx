@@ -54,6 +54,7 @@ export default function CodeWelcome() {
           >
             ▉ Ready to code?
           </p>
+          
         </div>
       </div>
     </div>
