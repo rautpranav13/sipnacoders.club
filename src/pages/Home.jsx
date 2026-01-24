@@ -10,7 +10,7 @@ import CodexiaEventSection from '../components/upcomingEvent/CodexiaEventSection
 
 import LogoNav from '../components/navbars/LogoNav';
 
-import Border from '../components/common/border';
+import Border from '../components/common/Border';
 
 import Section3GroupPhoto from '../components/common/Section3GroupPhoto';
 
