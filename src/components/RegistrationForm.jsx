@@ -20,21 +20,15 @@ const RegistrationForm = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto mt-20 sm:mt-28 px-4 sm:px-6 pb-24">
 
         {/* Heading */}
-        <div
+        {/* <div
           className={`text-center transition-all duration-700 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
         >
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
-            Register for
-            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">
-              VIDYOTAN 2026
-            </span>
-          </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-zinc-400 max-w-xl mx-auto">
             Fill the form below to participate. Limited seats available.
           </p>
-        </div>
+        </div> */}
 
         {/* 📝 Form Container */}
         <div className="mt-10 sm:mt-14">
