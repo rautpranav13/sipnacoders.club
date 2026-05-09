@@ -1,5 +1,7 @@
 import React from 'react';
-import { ArrowRight, Github, Twitter, Linkedin, Terminal, Zap } from 'lucide-react';
+import { ArrowRight, Github, Twitter, Instagram, Terminal, Zap } from 'lucide-react';
+
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,16 +34,17 @@ const Footer = () => {
           <div className="lg:col-span-4 flex gap-8 md:gap-12 text-sm">
             <div className="flex flex-col gap-2">
               <h4 className="font-semibold text-zinc-100 text-xs uppercase tracking-wider mb-1">Index</h4>
-              <a href="#" className="hover:text-cyan-400 transition-colors">Events</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors">Hackathons</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors">Projects</a>
+              <a href="/" className="hover:text-cyan-400 transition-colors">Home</a>
+              <a href="/events" className="hover:text-cyan-400 transition-colors">Events</a>
+              <a href="/connect" className="hover:text-cyan-400 transition-colors">Connect</a>
+              <a href="/team" className="hover:text-cyan-400 transition-colors">Team</a>
             </div>
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
               <h4 className="font-semibold text-zinc-100 text-xs uppercase tracking-wider mb-1">System</h4>
               <a href="#" className="hover:text-cyan-400 transition-colors">Docs</a>
               <a href="#" className="hover:text-cyan-400 transition-colors">API</a>
               <a href="#" className="hover:text-cyan-400 transition-colors">Status</a>
-            </div>
+            </div> */}
           </div>
 
           {/* 3. Input Module (Col 9-12) */}
@@ -66,13 +69,13 @@ const Footer = () => {
         <div className="pt-6 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           
           <div className="flex items-center gap-6 text-zinc-500">
-            <span>© 2024 Coders Club</span>
-            <span className="hidden md:inline">v2.4.0 (Stable)</span>
+            <span>© 2026 Coders Club</span>
+            <span className="hidden md:inline">v2.0 (Stable)</span>
           </div>
 
           <div className="flex items-center gap-2 group cursor-default">
             <span className="text-[20px] uppercase tracking-[0.2em] text-zinc-600">Dev:</span>
-            <span className="font-mono text-[15px] text-zinc-400 group-hover:text-cyan-400 transition-colors duration-300">
+            <span className="font-mono text-[17px] text-zinc-400 group-hover:text-cyan-400 transition-colors duration-300">
               vrushabh shelokar
             </span>
           </div>
@@ -89,9 +92,9 @@ const Footer = () => {
 
             {/* Compact Socials */}
             <div className="flex gap-3">
-              <a href="#" className="hover:text-white transition-colors"><Github size={14} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Twitter size={14} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Linkedin size={14} /></a>
+              {/* <a href="#" className="hover:text-white transition-colors"><Github size={14} /></a>
+              <a href="#" className="hover:text-white transition-colors"><Twitter size={14} /></a> */}
+              <a href="https://www.instagram.com/sipnacoders.club?igsh=NnJkNHFzcXM0dnF0" className="hover:text-white transition-colors"><Instagram size={14} /></a>
             </div>
           </div>
         </div>

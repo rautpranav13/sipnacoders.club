@@ -101,7 +101,7 @@ const CodexiaEventSection = () => {
             <InfoCard 
               icon={<Calendar className="w-4 h-4 text-purple-400" />} 
               label="DATE" 
-              value="Jan 28, 2026" 
+              value="Postponed" 
             />
             <InfoCard 
               icon={<Clock className="w-4 h-4 text-blue-400" />} 

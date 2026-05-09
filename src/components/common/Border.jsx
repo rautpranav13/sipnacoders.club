@@ -11,7 +11,7 @@ const Border = () => {
              Coders Club /// Coders Club /// Coders Club /// Coders Club /// Coders Club ///
               Coders Club /// Coders Club /// Coders Club /// Coders Club /// Coders Club ///
                Coders Club /// Coders Club /// Coders Club /// Coders Club /// Coders Club ///
-                Coders Club /// Coders Club /// Coders Club /// Coders Club /// Coders Club ///
+                Coders Club /// Coders Club /// Coders Club /// Coders Club /// Coders Club ///Coders Club /// Coders Club ///
           </span>
         ))}
       </div>
