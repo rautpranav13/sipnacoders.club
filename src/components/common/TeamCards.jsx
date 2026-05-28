@@ -99,7 +99,7 @@ const TeamCard = ({
                   <span className="w-0.5 h-2 bg-emerald-500/50 rounded-sm"></span>
                   <span className="w-0.5 h-1.5 bg-emerald-500/30 rounded-sm"></span>
                </div>
-               <span className="font-mono text-[10px] text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2 py-1 rounded-sm border border-emerald-500/10 backdrop-blur-md">
+               <span className="font-mono text-[12px] text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2 py-1 rounded-sm border border-emerald-500/10 backdrop-blur-md">
                  {role}
                </span>
             </div>

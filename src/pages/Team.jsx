@@ -12,6 +12,8 @@ import sakshi from "../assets/people/sakshi.jpg"
 import harshdeep from "../assets/people/harshdeep.jpg"
 import disha from "../assets/people/disha.jpg"
 
+import images from "../assets/people/images.jpg"
+
 import Footer from '../components/footer/Footer';
 import NavBar from "../components/navbars/NavBar";
 
@@ -71,7 +73,7 @@ const CORE_TEAM = [
   {
     name: "Uday Shivarkar",
     role: "Treasurer",
-    img: vrushabh,
+    img: images,
     status: "—",
     socials: {},
   },
@@ -99,7 +101,7 @@ const CORE_TEAM = [
   {
     name: "Amrita Dahake",
     role: "Executive Member",
-    img: vrushabh,
+    img: images,
     status: "—",
     socials: {},
   },
@@ -122,9 +124,11 @@ const Team = () => {
       {/* 🧭 Navigation */}
       <NavBar active="/" />
       {/* 1. Global Noise Overlay (Consistency with Home) */}
-      <div className="fixed inset-0 opacity-[0.03] pointer-events-none z-0"
-        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}
-      />
+         {/* --- GLOBAL BACKGROUND GRID --- */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+      </div>
 
       {/* 2. Header Section */}
       <header className="flex flex-col items-center mt-32 mb-24 relative px-4 select-none">

@@ -3,6 +3,8 @@ import { Calendar, MapPin, ArrowUpRight, Code2, Cpu, Trophy, Globe, Zap } from '
 
 import Flutter_Flow from "../../assets/events/flutter_flow.png"
 import Devthone from "../../assets/events/devthone.png"
+import Tech_Treck from "../../assets/events/tech_treck.png"
+import Treasure_X from "../../assets/events/treasure_x.png"
 
 // Mock Data for 5 Premium Events
 const events = [
@@ -11,7 +13,7 @@ const events = [
     title: "Flutter Flow ",
     category: "Workshop",
     date: "25 OCT 2024",
-    description: "Our flagship 48-hour hackathon. 500+ participants, $10k in prizes, and sleepless innovation.",
+    description: "A practical workshop on no-code/low-code app development using Flutter Flow, attended by 100+ students, enabling them to build basic mobile applications efficiently.",
     image: Flutter_Flow,
     icon: <Trophy className="text-yellow-400" />
   },
@@ -20,7 +22,7 @@ const events = [
     title: "Devthon",
     category: "Hackathon",
     date: "20 MAR 2024",
-    description: "Deep dive into LLMs and Generative AI. Featuring speakers from Google & OpenAI.",
+    description: "A large-scale national-level hackathon that received 300+ entries with 200+ active participants, providing a competitive platform for innovation, problem-solving, and real-world project development.",
     image: Devthone,
     icon: <Cpu className="text-purple-400" />
   },
@@ -28,26 +30,26 @@ const events = [
     id: 3,
     title: "TreasureX",
     category: "Treasure Hunt",
-    date: " 2024",
-    description: "Demystifying Blockchain. Smart contract development workshops on Ethereum.",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1920&auto=format&fit=crop",
+    date: " 28 Aug 2025",
+    description: "A fun and engaging event combining coding challenges with problem-solving activities, where 30+ students participated, making learning interactive and enjoyable.",
+    image: Treasure_X,
     icon: <Globe className="text-blue-400" />
   },
   {
     id: 4,
     title: "Tech Trek",
     category: "SEMINAR",
-    date: "JUL 2024",
-    description: "Competitive programming at its peak. Data structures, algorithms, and speed.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format&fit=crop",
+    date: "8 Nov 2025",
+    description: "An advanced continuation of the Tech Trek series, attended by 50 students, focusing on deeper insights into modern technologies and practical development guidance.",
+    image: Tech_Treck,
     icon: <Code2 className="text-green-400" />
   },
   {
     id: 5,
     title: "Prompt Engineering",
     category: "Workshop",
-    date: "JUN 2024",
-    description: "Scaling from 1 to 1 Million users. Architecture patterns for modern engineers.",
+    date: "27 Sep 2025",
+    description: "A focused session on AI and prompt engineering techniques, where 40+ students participated and learned how to effectively interact with modern AI tools.",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1920&auto=format&fit=crop",
     icon: <Zap className="text-orange-400" />
   }

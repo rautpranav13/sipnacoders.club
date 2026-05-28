@@ -231,7 +231,7 @@ const HomePage = () => {
             { label: 'Participants', value: '400+' },
             { label: 'Event_Conducted', value: '5+' },
             { label: 'Lines_Of_Code', value: '' },
-            { label: 'Workshops', value: '' }
+            { label: 'Workshops', value: '2' }
           ].map((stat, i) => (
             <div key={i} className="text-center md:text-left">
               <div className="text-3xl font-mono font-bold text-white mb-1">{stat.value}</div>
